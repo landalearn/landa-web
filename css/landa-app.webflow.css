@@ -2981,8 +2981,13 @@ figcaption {
   color: #004ccc;
 }
 
+.navbar1_link:focus {
+  color: #004ccc;
+}
+
 .navbar1_link.w--current {
-  color: #000;
+  color: #004ccc;
+  font-weight: 500;
 }
 
 .header1_component {
