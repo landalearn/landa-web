@@ -1916,6 +1916,7 @@ figcaption {
 }
 
 .heading-style-h5 {
+  color: #2b2b2b;
   font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 700;
