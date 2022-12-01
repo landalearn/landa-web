@@ -2911,6 +2911,7 @@ figcaption {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 900;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3999,7 +4000,7 @@ figcaption {
   top: 0%;
   right: 0%;
   bottom: auto;
-  z-index: 50000;
+  z-index: 1000;
   width: 100%;
   height: 4px;
   background-color: #004ccc;
@@ -4674,12 +4675,12 @@ figcaption {
   position: -webkit-sticky;
   position: sticky;
   left: 0%;
-  top: 9.5%;
+  top: 8%;
   right: 0%;
   bottom: auto;
-  z-index: 1000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  z-index: 800;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 
@@ -5049,6 +5050,13 @@ figcaption {
     flex: 0 0 auto;
   }
 
+  .button.is-secondary.is-small.mobile-view {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+  }
+
   .heading-style-h4 {
     font-size: 1.75rem;
   }
@@ -5129,6 +5137,10 @@ figcaption {
 
   .navbar1_menu-button.w--open {
     background-color: transparent;
+  }
+
+  .navbar1_component {
+    z-index: 900;
   }
 
   .menu-icon1 {
@@ -5311,6 +5323,10 @@ figcaption {
     grid-template-rows: auto auto;
   }
 
+  .progress-bar-animation {
+    z-index: 1000;
+  }
+
   .coloured-header-heading {
     font-size: 3.25rem;
   }
@@ -5380,11 +5396,12 @@ figcaption {
   }
 
   .faq-tabs {
-    width: 120%;
+    width: 110vw;
   }
 
   .faq-sticky-buttons {
-    overflow: auto;
+    z-index: 800;
+    overflow: scroll;
     width: auto;
   }
 
@@ -5643,6 +5660,17 @@ figcaption {
     flex: 0 0 auto;
   }
 
+  .button.is-secondary.is-small.mobile-view {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
   .button.is-small.w--current {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
@@ -5685,6 +5713,13 @@ figcaption {
   .navbar1_component {
     height: auto;
     min-height: 4rem;
+  }
+
+  .navbar1_menu-buttons {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
   }
 
   .navbar1_logo-link {
@@ -5837,6 +5872,10 @@ figcaption {
   .layout396_component {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
+  }
+
+  .progress-bar-animation {
+    z-index: 99999999;
   }
 
   .coloured-header-heading {
@@ -6005,11 +6044,11 @@ figcaption {
   }
 
   .faq-tabs {
-    width: 160%;
+    width: 145vw;
   }
 
   .faq-sticky-buttons {
-    overflow: auto;
+    overflow: scroll;
     width: auto;
     padding-right: 0%;
     padding-left: 0%;
@@ -6035,6 +6074,10 @@ figcaption {
 
   .hide-mobile-portrait {
     display: none;
+  }
+
+  .max-width-large {
+    max-width: 48rem;
   }
 
   .margin-top {
@@ -6148,8 +6191,12 @@ figcaption {
     font-size: 0.65rem;
   }
 
+  .padding-global.sticky-button {
+    padding-right: 5px;
+  }
+
   .navbar1_component {
-    z-index: 99999999;
+    z-index: 900;
   }
 
   .header1_component {
@@ -6274,6 +6321,10 @@ figcaption {
     align-content: flex-start;
   }
 
+  .progress-bar-animation {
+    z-index: 1000;
+  }
+
   .coloured-header-heading {
     font-size: 2.1rem;
   }
@@ -6282,9 +6333,40 @@ figcaption {
     font-size: 2.1rem;
   }
 
+  .text-size-medium-2 {
+    display: inline-block;
+  }
+
+  .faq6_question {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .faq6_list {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .faq6_accordion {
+    overflow: hidden;
+  }
+
   .faq6_component {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .faq6_list-grid {
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 
   .blog68_mask {
@@ -6310,12 +6392,32 @@ figcaption {
   }
 
   .faq-tabs {
-    width: 280%;
-    padding-right: 5%;
+    display: -ms-grid;
+    display: grid;
+    width: 360%;
+    padding-right: 20px;
+    padding-left: 0px;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    justify-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
 
   .faq-sticky-buttons {
-    overflow: auto;
+    top: 9%;
+    overflow: scroll;
+    padding-top: 2rem;
     -o-object-fit: fill;
     object-fit: fill;
   }
@@ -6328,6 +6430,21 @@ figcaption {
   .header76_component {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .button-section {
+    overflow: scroll;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .button-section-container {
+    width: 100%;
+    max-width: 1920px;
+  }
+
+  .heading-10 {
+    display: inline-block;
   }
 }
 
@@ -10443,7 +10560,7 @@ figcaption {
   grid-row-end: span 1;
 }
 
-#w-node-_094e2443-1228-7b93-993f-614eddb66cf1-be3cafd0 {
+#w-node-f944ffdd-e7e2-1989-26b9-f74467d04e68-be3cafd0 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -10454,7 +10571,7 @@ figcaption {
   grid-row-end: span 1;
 }
 
-#w-node-_3f5b8c42-5cc9-692e-2e48-32bce171e4bf-be3cafd0 {
+#w-node-f944ffdd-e7e2-1989-26b9-f74467d04ee9-be3cafd0 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -10465,7 +10582,7 @@ figcaption {
   grid-row-end: span 1;
 }
 
-#w-node-a2cd1b72-bce7-58d7-7b3d-9925bc95822d-be3cafd0 {
+#w-node-f944ffdd-e7e2-1989-26b9-f74467d04f8c-be3cafd0 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -10476,7 +10593,7 @@ figcaption {
   grid-row-end: span 1;
 }
 
-#w-node-b210f031-8dfb-2c25-2d65-23809e92688b-be3cafd0 {
+#w-node-f944ffdd-e7e2-1989-26b9-f74467d04fd7-be3cafd0 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -10487,7 +10604,7 @@ figcaption {
   grid-row-end: span 1;
 }
 
-#w-node-_69194880-881b-af7e-b66a-f7be28e52908-be3cafd0 {
+#w-node-f944ffdd-e7e2-1989-26b9-f74467d05053-be3cafd0 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
