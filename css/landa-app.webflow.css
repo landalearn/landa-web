@@ -5237,6 +5237,13 @@ figcaption {
   grid-template-rows: auto auto;
 }
 
+.layout105_component.unis {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
 .layout105_content-right {
   padding-top: 0.5rem;
 }
