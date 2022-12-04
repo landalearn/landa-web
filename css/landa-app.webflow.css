@@ -5967,6 +5967,19 @@ figcaption {
     grid-row-gap: 2rem;
   }
 
+  .layout105_component.unis {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .layout105_content-right {
+    padding-top: 0rem;
+  }
+
   .layout105_content-left.orgs-title {
     max-width: none;
   }
@@ -6691,6 +6704,13 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .layout105_component.unis {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
   .layout396_row-unis {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
@@ -7199,6 +7219,13 @@ figcaption {
   .layout105_component {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .layout105_component.unis {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 
   .layout396_row-unis {
