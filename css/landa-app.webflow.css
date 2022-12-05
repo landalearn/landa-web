@@ -6201,8 +6201,8 @@ figcaption {
   }
 
   .header76_content-left {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
   }
 
   .header76_component {
@@ -6962,6 +6962,12 @@ figcaption {
 
   .header76_content-right {
     height: 30rem;
+    padding-left: 0vw;
+  }
+
+  .header76_content-left {
+    margin-right: 0%;
+    margin-left: 0%;
   }
 
   .header76_component {
@@ -7261,6 +7267,7 @@ figcaption {
   }
 
   .text-align-center.align-left {
+    font-size: 2rem;
     text-align: left;
   }
 
@@ -7657,6 +7664,10 @@ figcaption {
   .layout231_component {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .light-h4 {
+    font-size: 1.3rem;
   }
 }
 
@@ -12813,6 +12824,15 @@ figcaption {
     -webkit-order: -9999;
     -ms-flex-order: -9999;
     order: -9999;
+  }
+
+  #w-node-ee1ad751-9a2d-8d43-1125-69b53cd5e448-bf2402b1 {
+    -ms-grid-column-align: auto;
+    justify-self: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
   }
 }
 
