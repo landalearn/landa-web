@@ -6419,6 +6419,10 @@ figcaption {
   bottom: 1rem;
 }
 
+.section_categories {
+  background-color: #f5fbff;
+}
+
 @media screen and (min-width: 1280px) {
   .button.is-alternate.is-xsmall {
     padding: 0.6rem 1.2rem;
