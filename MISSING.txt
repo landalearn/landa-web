@@ -1,8 +1,0 @@
-The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
-
-images/Frame-52.webp
-images/Hero-image-about.webp
-images/favicon.png
-images/short-courses_1.webp
-images/unis2.webp
-images/webclip.png
