@@ -2875,8 +2875,8 @@ figcaption {
 }
 
 .padding-global {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
